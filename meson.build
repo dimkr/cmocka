@@ -33,7 +33,7 @@ libcmocka = library('cmocka',
                     include_directories: cmocka_includes,
                     install: true,
                     dependencies: [cc.find_library('rt', required: false)])
-install_headers('include/cmocka.h', subdir: 'cmocka')
+install_headers('include/cmocka.h')
 
 pkgconfig = import('pkgconfig')
 pkgconfig.generate(libraries : [libcmocka],
