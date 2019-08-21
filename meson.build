@@ -1,4 +1,4 @@
-project('cmocka', 'c', version: '1.1.1', license: 'Apache-2.0')
+project('cmocka', 'c', version: '1.1.5', license: 'Apache-2.0')
 
 cc = meson.get_compiler('c')
 
@@ -37,7 +37,7 @@ install_headers('include/cmocka.h')
 
 pkgconfig = import('pkgconfig')
 pkgconfig.generate(libraries : [libcmocka],
-                   version : '1.1.1',
+                   version : '1.1.5',
                    name : 'cmocka',
                    filebase : 'cmocka',
                    description : 'The cmocka unit testing library')
