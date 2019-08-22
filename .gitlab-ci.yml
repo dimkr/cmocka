@@ -32,8 +32,6 @@ fedora/x86_64:
     -DPICKY_DEVELOPER=ON
     -DUNIT_TESTING=ON .. &&
     make -j$(nproc) && ctest --output-on-failure
-  - cd .. && meson build -Dunit_testing=true &&
-    meson test -C build --print-errorlogs
   tags:
   - shared
   except:
